@@ -1,0 +1,199 @@
+/* Dashboard.module.css */
+
+/* Container for the dashboard */
+.dashboard-container {
+  display: flex;
+  flex-direction: row; /* Default is row for larger screens */
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Left side (User Data) */
+.user-data-container {
+  width: 30%; /* 1/3 of the container */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side (Booking Data) */
+.booking-data-container {
+  width: 65%; /* 2/3 of the container */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.dashboard-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.user-details-heading, .booking-details-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.user-details-item, .booking-details-item {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 100%;
+    display: list-item;
+  }
+
+  /* Order of elements to ensure Booking is always below User Data */
+  .user-data-container {
+    width: 100%;
+    margin-bottom: 20px; /* Space between the containers */
+    order: 1; /* Ensure User Data comes first */
+  }
+
+  .booking-data-container {
+    width: 100%;
+    order: 2; /* Ensure Booking Data comes after User Data */
+  }
+
+  .dashboard-heading {
+    font-size: 1.5rem;
+  }
+
+  .user-details-heading, .booking-details-heading {
+    font-size: 1.2rem;
+  }
+}
+
+/* Dashboard.module.css */
+
+/* User details */
+.user-details-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.user-details-item {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+
+.logout-button:hover {
+  background-color: #c44123; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .user-details-heading {
+    font-size: 1.3rem;
+  }
+
+  .user-details-item {
+    font-size: 1rem;
+  }
+
+  .logout-button {
+    width: 40%; /* Full width on smaller screens */
+  }
+}
+
+.user-details-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-details-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.user-details-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.user-details-item label {
+  font-weight: bold;
+}
+
+.edit-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.user-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button,
+.save-button,
+.logout-button {
+  padding: 10px 15px;
+
+  background-color: #ff5733; /* Or any color you prefer */
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cancel-button{
+  padding: 10px 15px;
+
+  background-color: red; /* Or any color you prefer */
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+margin-left: 5px;
+}
+
+.edit-button {
+  background-color: #ffa500;
+}
+
+.save-button {
+  background-color: green;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+}
+
